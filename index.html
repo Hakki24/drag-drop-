@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>drag&drop</title>
+</head>
+<body>
+    
+<!-- This is heading -->
+    <h3 fontfamily=" Lucida Console, Courier, monospace">This website can drag and drop for the the given images</h3>
+    <hr>
+    <ol>
+    <!-- dropping div -->
+
+    <div id="getData" ondrop="drop(event)" draggable="false" ondragover="allowDrop(event)"></div>
+    <br>
+    <!--drag-image from div   -->
+    <div id="setData" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="dragData"
+        src="https://t4.ftcdn.net/jpg/04/53/48/35/360_F_453483571_3f042fk3eWCrmw05WflZyIe60Wv20XiM.jpg"
+       
+        ondragstart="drag(event)"
+        width="100%"
+        height="100%"
+        
+        
+        ></div>
+</ol>
+<script src="script.js"></script>
+
+</body>
+</html>
